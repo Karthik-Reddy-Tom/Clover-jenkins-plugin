@@ -1,10 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.jenkins-ci.plugins</groupId>
+        <groupId>org.jenkins-ci.plugin</groupId>
         <artifactId>plugin</artifactId>
         <version>1.642.3</version>
+		<packaging>maven-plugin</packaging>
     </parent>
+	
+	<groupId>org.jenkins-ci.tools</groupId>
+    <artifactId>maven-hpi-plugin</artifactId>
+    <version>1.115</version>
+    <packaging>maven-plugin</packaging>
+  
     <artifactId>clover</artifactId>
     <packaging>hpi</packaging>
     <version>4.10.1-SNAPSHOT</version>
@@ -39,6 +46,11 @@
             <groupId>org.openclover</groupId>
             <artifactId>clover</artifactId>
             <version>4.3.1</version>
+        </dependency>
+		<dependency>
+            <groupId>org.jenkins-ci.tools</groupId>
+            <artifactId>maven-hpi-plugin</artifactId>
+            <version>1.120</version>
         </dependency>
         <!--Build breaks without these:-->
         <dependency>
