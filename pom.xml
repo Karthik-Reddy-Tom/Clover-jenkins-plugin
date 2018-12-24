@@ -4,8 +4,9 @@
         <groupId>org.jenkins-ci.plugin</groupId>
         <artifactId>plugin</artifactId>
         <version>1.642.3</version>
-		<packaging>maven-plugin</packaging>
+	    <packaging>maven-plugin</packaging>
     </parent>
+  
   
     <artifactId>clover</artifactId>
     <packaging>hpi</packaging>
